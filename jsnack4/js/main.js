@@ -6,9 +6,14 @@ Bonus: Controllate che i nomi scritti anche con lettere maiuscole o minuscole si
 let arrayInvitati=["andrea","francesco","giovanni","alessandro","alessio","lorenzo"];
 let nomeUtente=prompt("Vediamo se sei sulla lista");
 
-for(let i=0;i<arrayInvitati.length;i++){
+for(let i=0;i<=arrayInvitati.length;i++){
     nomeUtente=nomeUtente.toLowerCase();
     if(nomeUtente==arrayInvitati[i]){
         console.log("Sei sulla lista");
+        break;
+    }
+    else if(nomeUtente!=arrayInvitati && i==arrayInvitati.length){
+        console.log("Non sei sulla lista smamma.");
+        
     }
 }
