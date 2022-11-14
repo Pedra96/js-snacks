@@ -3,7 +3,14 @@ Il software stampa prima la parola più corta,poi la parola più lunga.*/
 
 let parolaUno=prompt("inserisci una parola");
 
+while(!isNaN(parseInt(parolaUno))){
+    parolaUno=prompt("Input errato reinserisci una parola");
+}
 let parolaDue=prompt("inserisci una seconda parola");
+
+while(!isNaN(parseInt(parolaDue))){
+    parolaDue=prompt("Input errato reinserisci la parola");
+}
 
 if(parolaUno.length<parolaDue.length){
     console.log(parolaUno +' è una parola più corta di '+parolaDue);
