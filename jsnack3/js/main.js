@@ -7,6 +7,9 @@ let arrayNumero=[];
 let somma=0;
 let numeroMaggiore=0;
 let arrayMassimaLunghezza=prompt("quante volte loppiamo?");
+
+
+
 for(let i=0;i<arrayMassimaLunghezza;i++){
     numeroUtente=prompt("Inserisci un numero");
     arrayNumero[i]=numeroUtente;
