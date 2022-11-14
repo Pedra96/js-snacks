@@ -5,12 +5,20 @@ ha perso.
 Al posto di giocare con numeri da 0 a 10, prima di giocare chiedete all'utente il numero massimo
 consento (n) e fate estrarre a caso un numero da 0 a n, il resto rimane invariato.*/
 
-
-
-do{
-    numeroMin=prompt("dammi il primo numero");
-}while(isNaN(numeroMin=parseInt(numeroMin))== true);
+let numeroMax;
+let userNumero;
 
 do{
-    numeroMax=prompt("dammi il secondo numero");
+    numeroMax=prompt("dammi il numero massimo");
 }while(isNaN(numeroMax=parseInt(numeroMax))== true);
+do{
+    userNumero=prompt("dammi il tuo numero");
+}while(isNaN(userNumero=parseInt(userNumero))== true);
+
+let numeroRandomico=Math.floor(Math.random() * numeroMax) + 1;
+userNumero=parseInt(userNumero);
+if(userNumero==numeroRandomico){
+    console.log("Hai vinto");
+}else{
+    console.log("Hai perso il numero scelto del computer era "+numeroRandomico+" tu hai scelto "+userNumero);
+}
