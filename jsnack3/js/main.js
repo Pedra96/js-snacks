@@ -5,9 +5,7 @@ Bonus: Oltre alla somma, vi chiedo il maggiore, il minore e la media.*/
 let numeroUtente;
 let arrayNumero=[];
 let somma=0;
-let numeroMaggiore=0;
 let arrayMassimaLunghezza=prompt("quante volte loppiamo?");
-
 
 
 for(let i=0;i<arrayMassimaLunghezza;i++){
